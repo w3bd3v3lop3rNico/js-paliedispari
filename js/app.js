@@ -11,8 +11,18 @@ function isPalindrome(wordNorm, wordReverse) {
     return false
 }
 
+
+
+// invertiamo parola originale
+// creare variabile stringa vuota
+// per ogni lettera della parola partendo dalla fine
+// leggiamo la lettera corrente
+// concateniamo alla variabile parolaRovesciata
+
 const arrayLetters = [ ]; 
 console.log(arrayLetters)
+
+// potevo ciclare al contrario oppure usare split
 
 for (let i = 0; i < word.length; i++) {
     let carattere = word[i]
@@ -38,6 +48,10 @@ console.log(wordReverse, wordNormal);
 // let Palindrome = isPalindrome(wordNormal, wordReverse);
 // console.log(Palindrome);
 
+// SE la parola === parola invertita
+    // return true
+// ALTRIMENTI
+    // return false
 if (isPalindrome(wordNormal, wordReverse)) {
     alert('la parola è palindroma')
 } else {
